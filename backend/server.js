@@ -14,7 +14,8 @@ let db, usersCollection;
 // Connect to MongoDB
 async function connectDB() {
     await client.connect();
-    db = client.db("DB_NAME");
+    db = client.db(process.env.DB_NAME);
+    console.log(process.env.DB_NAME);
     usersCollection = db.collection("Users");
     console.log("✅ MongoDB Connected");
 }
