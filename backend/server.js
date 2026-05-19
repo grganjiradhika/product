@@ -34,7 +34,7 @@ app.post("/users", async (req, res) => {
         res.status(500).json({ error: err.message });
     }
 });
-https://www.youtube.com/watch?v=w3ogBCZsMIs
+
 
 // 🔵 READ ALL (GET)
 app.get("/getusers", async (req, res) => {
